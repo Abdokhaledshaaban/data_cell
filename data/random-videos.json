@@ -1,0 +1,122 @@
+[
+  {
+    "title": "اهم 20 اختصار في Excel",
+    "desc": "تعرف على أهم 20 اختصار في Excel لزيادة إنتاجيتك.",
+    "thumbnail": "img/random_vedios/important_20_shortcut.jpg",
+    "video": "https://www.youtube.com/embed/aLZr826nf_k"
+  },
+  {
+    "title": "إنشاء شريط جانبي في الاكسيل",
+    "desc": "تعلم كيفية إنشاء شريط جانبي في Excel باستخدام VBA لعرض معلومات إضافية أو أدوات.",
+    "thumbnail": "img/random_vedios/side bar.webp",
+    "video": "https://www.youtube.com/embed/e4l2_wyBugs"
+  },
+  {
+    "title": "استخدام الدالة filter في Excel",
+    "desc": "تعرف على كيفية استخدام الدالة filter في Excel لتصفية البيانات بسهولة.",
+    "thumbnail": "img/random_vedios/filter.webp",
+    "video": "https://www.youtube.com/embed/THHN7V6JM2U"
+  },
+  {
+    "title": "استخدام الدالة groupBy",
+    "desc": "كيفية استخدام الدالة groupBy في Excel لتنظيم البيانات بسهولة.",
+    "thumbnail": "img/random_vedios/groupby.jpg",
+    "video": "https://www.youtube.com/embed/GD_Dc7oyriI"
+  },
+  {
+    "title": "شيتات غير محدوده",
+    "desc": "تعرف على كيفية إنشاء شيتات غير محدودة في Excel.",
+    "thumbnail": "img/random_vedios/no limit files.jpg",
+    "video": "https://www.youtube.com/embed/xBdaaBffhWY"
+  },
+  {
+    "title": "اخطاء شائعة في Excel",
+    "desc": "تعرف على أهم الأخطاء الشائعة في Excel وكيفية إصلاحها.",
+    "thumbnail": "img/random_vedios/اخطاء اكسيل.jpg",
+    "video": "https://www.youtube.com/embed/SARo_PxjOKk"
+  },
+  {
+    "title": "استخدام الدالة DATEDIF",
+    "desc": "تعرف على كيفية استخدام الدالة DATEDIF في Excel لحساب الفروق بين التواريخ.",
+    "thumbnail": "img/random_vedios/datedif.jpg",
+    "video": "https://www.youtube.com/embed/NpEgb5LlKGs"
+  },
+  {
+    "title": "ازاي تكون محلل بيانات شاطر",
+    "desc": "تعرف على كيفية becoming a successful data analyst.",
+    "thumbnail": "img/random_vedios/محلل شاطر.webp",
+    "video": "https://www.youtube.com/embed/q53RAD9v1gc"
+  },
+  {
+    "title": "تحويل ملف Excel إلى PDF",
+    "desc": "تعرف على كيفية تحويل ملف Excel إلى PDF باستخدام Excel.",
+    "thumbnail": "img/random_vedios/pdf to excel.jpg",
+    "video": "https://www.youtube.com/embed/t--aQ4jtR5c"
+  },
+  {
+    "title": "استخدام الدالة HSTACK",
+    "desc": "تعرف على كيفية استخدام الدالة HSTACK في Excel لدمج البيانات أفقياً.",
+    "thumbnail": "img/random_vedios/hstack.webp",
+    "video": "https://www.youtube.com/embed/_UQsQkO1RBc"
+  },
+  {
+    "title": "استخدام الدالة VSTACK",
+    "desc": "تعرف على كيفية استخدام الدالة VSTACK في Excel لدمج البيانات عمودياً.",
+    "thumbnail": "img/random_vedios/vstack.webp",
+    "video": "https://www.youtube.com/embed/RCGpzSpvzh4"
+  },
+  {
+    "title": "تتبع الحضور والانصراف",
+    "desc": "تعرف على كيفية تتبع الحضور والانصراف في Excel باستخدام VBA.",
+    "thumbnail": "img/random_vedios/الحضور والانصراف.webp",
+    "video": "https://www.youtube.com/embed/ot5WDY0qFoU"
+  },
+  {
+    "title": "ارسال رساله واتس من الاكسيل",
+    "desc": "تعرف على كيفية إرسال رسالة واتس من خلال Excel باستخدام VBA.",
+    "thumbnail": "img/random_vedios/excel to whatsapp.webp",
+    "video": "https://www.youtube.com/embed/LFEzyw-TFio"
+  },
+  {
+    "title": "استخدام CHAT-GPT في Excel",
+    "desc": "تعرف على كيفية استخدام CHAT-GPT في Excel لتحسين تجربة المستخدم وزيادة الإنتاجية.",
+    "thumbnail": "img/random_vedios/chatgpt.webp",
+    "video": "https://www.youtube.com/embed/5TbbVhJdjFc"
+  },
+  {
+    "title": "حساب المتوسط في Excel",
+    "desc": "تعرف على كيفية استخدام الدالة AVERAGE في Excel لحساب المتوسط.",
+    "thumbnail": "img/random_vedios/average.jpg",
+    "video": "https://www.youtube.com/embed/k3QhaXGHppM"
+  },
+  {
+    "title": "اهم 10 نصائح في الاكسيل",
+    "desc": "تعرف على أهم 10 نصائح في Excel لزيادة إنتاجيتك وتحسين مهاراتك.",
+    "thumbnail": "img/random_vedios/اهم 10 نصائح.jpg",
+    "video": "https://www.youtube.com/embed/Jbxg1O2u7Ls"
+  },
+  {
+    "title": "اقوى تجميعة لدوال الاكسيل",
+    "desc": "تعرف على أقوى تجميعة لدوال Excel التي ستساعدك في تحسين مهاراتك وزيادة إنتاجيتك.",
+    "thumbnail": "img/random_vedios/دوال الاكسيل.webp",
+    "video": "https://www.youtube.com/embed/YkdUMAPwN7I"
+  },
+  {
+    "title": "اسرع طريقة لتنسيق الخلايا",
+    "desc": "تعرف على أسرع طريقة لتنسيق الخلايا في Excel باستخدام اختصارات لوحة المفاتيح.",
+    "thumbnail": "img/random_vedios/تنسيق الصفوف.webp",
+    "video": "https://www.youtube.com/embed/DM-9StZXJtg"
+  },
+  {
+    "title": "خدعة اضافة الصفوف والاعمدة",
+    "desc": "اسرع طريقة لاضافة الصفوف والاعمدة في برنامج الاكسيل",
+    "thumbnail": "img/random_vedios/اضافة صفوف.webp",
+    "video": "https://www.youtube.com/embed/jd34wuu-2aQ"
+  },
+  {
+    "title": "إنشاء قائمة منسدلة في الاكسيل",
+    "desc": "تعلم كيفية إنشاء قائمة منسدلة في الاكسيل بشكل إحترافي",
+    "thumbnail": "img/random_vedios/drop_list.webp",
+    "video": "https://www.youtube.com/embed/l0fV-x10XYQ"
+  }
+]

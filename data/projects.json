@@ -1,0 +1,101 @@
+﻿{
+  "updated": "2026-03-17",
+  "projects": [
+    {
+      "title": "تحليل مبيعات التجزئة",
+      "description": "تنظيف بيانات المبيعات وبناء ملخصات شهرية ومؤشرات أداء واضحة.",
+      "level": "مبتدئ",
+      "duration": "1-2 ساعة",
+      "size": "1.6 MB",
+      "category": "Excel",
+      "tools": ["Excel", "Pivot Table", "Charts"],
+      "file": "retail-sales-analysis.xlsx",
+      "accent": "#2563eb",
+      "icon": "fa-file-excel"
+    },
+    {
+      "title": "تنظيف بيانات العملاء",
+      "description": "توحيد الأعمدة وإزالة القيم المكررة وبناء جدول جاهز للتحليل.",
+      "level": "متوسط",
+      "duration": "2 ساعة",
+      "size": "2.3 MB",
+      "category": "Power Query",
+      "tools": ["Excel", "Power Query", "Data Cleaning"],
+      "file": "customer-cleaning-workflow.xlsx",
+      "accent": "#0ea5e9",
+      "icon": "fa-broom"
+    },
+    {
+      "title": "لوحة متابعة الأداء الشهري",
+      "description": "تصميم Dashboard يعرض المبيعات والأرباح والهدف الشهري في شاشة واحدة.",
+      "level": "متوسط",
+      "duration": "2-3 ساعات",
+      "size": "3.1 MB",
+      "category": "Dashboard",
+      "tools": ["Excel", "Dashboard", "KPIs"],
+      "file": "monthly-performance-dashboard.xlsx",
+      "accent": "#f59e0b",
+      "icon": "fa-chart-column"
+    },
+    {
+      "title": "تحليل أرباح المنتجات",
+      "description": "تحليل هامش الربح حسب الفئة والمنتج وتحديد أهم عوامل الربحية.",
+      "level": "مبتدئ",
+      "duration": "1 ساعة",
+      "size": "1.2 MB",
+      "category": "Reports",
+      "tools": ["Excel", "Profit Analysis", "Charts"],
+      "file": "product-profit-analysis.xlsx",
+      "accent": "#22c55e",
+      "icon": "fa-coins"
+    },
+    {
+      "title": "توقع المخزون وإعادة الطلب",
+      "description": "حساب معدل الاستهلاك ونقطة إعادة الطلب لتجنب نفاد المخزون.",
+      "level": "متقدم",
+      "duration": "3 ساعات",
+      "size": "2.7 MB",
+      "category": "Excel",
+      "tools": ["Excel", "Inventory", "Forecasting"],
+      "file": "inventory-reorder-forecast.xlsx",
+      "accent": "#ef4444",
+      "icon": "fa-boxes-stacked"
+    },
+    {
+      "title": "تحليل شكاوى العملاء",
+      "description": "تصنيف الشكاوى وتحليل أسبابها وتحديد الأولويات للتحسين.",
+      "level": "مبتدئ",
+      "duration": "1-2 ساعة",
+      "size": "1.4 MB",
+      "category": "Excel",
+      "tools": ["Excel", "Text Analysis", "Reporting"],
+      "file": "customer-complaints-insights.xlsx",
+      "accent": "#8b5cf6",
+      "icon": "fa-comments"
+    },
+    {
+      "title": "تحليل المصروفات الشهرية",
+      "description": "تتبع المصروفات حسب البند مع مؤشرات توضح أعلى البنود تكلفة.",
+      "level": "مبتدئ",
+      "duration": "1 ساعة",
+      "size": "1.1 MB",
+      "category": "Finance",
+      "tools": ["Excel", "Budgeting", "Charts"],
+      "file": "monthly-expenses-tracker.xlsx",
+      "accent": "#14b8a6",
+      "icon": "fa-wallet"
+    },
+    {
+      "title": "تقييم أداء فريق المبيعات",
+      "description": "مقارنة أداء الأفراد حسب الهدف الشهري وبناء لوحة متابعة للفريق.",
+      "level": "متوسط",
+      "duration": "2-3 ساعات",
+      "size": "2.9 MB",
+      "category": "Dashboard",
+      "tools": ["Excel", "Team KPIs", "Dashboard"],
+      "file": "sales-team-performance.xlsx",
+      "accent": "#3b82f6",
+      "icon": "fa-people-group"
+    }
+  ]
+}
