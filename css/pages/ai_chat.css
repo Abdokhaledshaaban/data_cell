@@ -1,0 +1,56 @@
+/* Ai Chat Page */
+.ai-hero .badge {
+  font-size: 0.95rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+.ai-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 26px;
+  max-width: 460px;
+  text-align: right;
+}
+
+.ai-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-second);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.ai-chip {
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--primary);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.ai-message {
+  border-radius: 16px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ai-user {
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--text-main);
+}
+
+.ai-bot {
+  background: rgba(15, 23, 42, 0.04);
+  color: var(--text-second);
+}
+
+.darkmode .ai-bot {
+  background: rgba(148, 163, 184, 0.12);
+  color: var(--text-second);
+}

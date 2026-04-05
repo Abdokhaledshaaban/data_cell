@@ -1,0 +1,201 @@
+/* Courses Page */
+/* جميع الكورسات */
+
+/* hero */
+
+.courses-hero {
+  background: linear-gradient(120deg, #0d6efd, #0056b3);
+
+  color: white;
+
+  padding: 80px 0;
+}
+
+.courses-hero h1 {
+  font-size: 40px;
+
+  font-weight: bold;
+}
+
+/* =========================
+  Random Videos Section
+========================= */
+
+.random-videos {
+  color: var(--text-main);
+  padding: 70px 0;
+  background: var(--base-variant);
+}
+
+.random-videos .course-card p {
+  height: 50px;
+}
+
+.random-videos .course-card {
+  cursor: pointer;
+}
+.random-videos .course-card .img-container::after {
+  content: '\f04b';
+
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+
+  transition: 0.3s;
+}
+
+/* حركة عند المرور */
+
+.course-card:hover .img-container::after {
+  background: #0d6efd;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* =========================
+  Video Modal
+========================= */
+
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+/* modal box */
+
+.modal-content {
+  width: 75%;
+  max-width: 900px;
+  background: black;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+}
+
+/* iframe */
+
+.modal-content iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+}
+
+/* close button */
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* =========================
+  Responsive
+========================= */
+
+@media (max-width: 992px) {
+  .modal-content iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+  }
+
+  .modal-content iframe {
+    height: 300px;
+  }
+}
+
+.blog-pagination-wrap {
+  margin: 30px auto 0;
+  width: 100%;
+  background: var(--base-variant);
+  border-radius: 14px;
+  padding: 14px 18px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.blog-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.blog-pagination .pagination-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.blog-pagination .pagination {
+  gap: 6px;
+}
+
+.blog-pagination .pagination-side {
+  min-width: 110px;
+  text-align: center;
+  background: var(--second-background);
+  color: var(--text-main) !important;
+}
+
+.blog-pagination-wrap .page-link {
+  background: transparent;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.blog-pagination-wrap .page-link.disabled,
+.blog-pagination-wrap .page-link[aria-disabled='true'] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.blog-pagination-wrap .page-link:hover {
+  background: rgba(148, 163, 184, 0.12);
+}
+
+.blog-pagination-wrap .page-item.active .page-link {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: #ffffff;
+}

@@ -2,289 +2,214 @@
 <html lang="ar" dir="rtl">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description"
-    content="مدونة Data Cell: مقالات ونصائح عملية في Excel وPower BI وPower Query وتحليل البيانات.">
-  <meta name="keywords" content="مدونة, Data Cell, تحليل البيانات, Excel, Power BI, Power Query, نصائح, مقالات">
+  <meta name="description" content="مقالات ونصائح عملية في تحليل البيانات وExcel وPower BI وPower Query.">
+  <meta name="keywords"
+    content="data analysis, Excel, Power BI, Power Query, data analytics, learning platform, Pivot Table, dashboard">
   <meta name="author" content="Khaled Shaaban">
-  <meta name="theme-color" content="#0d6efd">
+  <meta name="theme-color" content="#2563eb">
   <meta name="robots" content="index, follow">
-
-  <link rel="canonical" href="https://datacell.com/blog.html">
-  <meta property="og:locale" content="ar_AR">
-
-  <meta property="og:url" content="https://datacell.com/blog.html">
+  <link rel="canonical" href="https://abdokhaledshaaban.github.io/data_cell/blog.html">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:url" content="https://abdokhaledshaaban.github.io/data_cell/blog.html">
   <meta property="og:site_name" content="Data Cell">
-  <meta property="og:title" content="المدونة | Data Cell">
+  <meta property="og:title" content="Data Cell | المدونة">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://datacell.com/static/img/preview.png">
-  <meta property="og:image:alt" content="مدونة Data Cell لتعلم تحليل البيانات">
-  <meta property="og:description"
-    content="مقالات عملية ونصائح تساعدك تتعلم Excel وPower BI وتحليل البيانات بأسلوب بسيط.">
-
-  <meta name="twitter:title" content="المدونة | Data Cell">
-  <meta name="twitter:description"
-    content="مقالات عملية ونصائح تساعدك تتعلم Excel وPower BI وتحليل البيانات بأسلوب بسيط.">
+  <meta property="og:image" content="https://abdokhaledshaaban.github.io/data_cell/img/hero.webp">
+  <meta property="og:image:alt" content="Data Cell platform preview">
+  <meta property="og:description" content="مقالات ونصائح عملية في تحليل البيانات وExcel وPower BI وPower Query.">
+  <meta name="twitter:title" content="Data Cell | المدونة">
+  <meta name="twitter:description" content="مقالات ونصائح عملية في تحليل البيانات وExcel وPower BI وPower Query.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://datacell.com/static/img/data-analysis-course.png">
-  <meta name="twitter:image:alt" content="مدونة Data Cell لتحليل البيانات">
-
-  <!-- icon -->
+  <meta name="twitter:image" content="https://abdokhaledshaaban.github.io/data_cell/img/hero.webp">
+  <meta name="twitter:image:alt" content="Data Cell platform preview">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Data Cell",
+      "url": "https://abdokhaledshaaban.github.io/data_cell/",
+      "logo": "https://abdokhaledshaaban.github.io/data_cell/img/apple-touch-icon.png",
+      "sameAs": [
+        "https://www.facebook.com/share/1FXn8WjE4s/",
+        "https://www.youtube.com/@khaledshaaban",
+        "https://chat.whatsapp.com/BG29xzeOdV8DOxjk9hb5Yo",
+        "https://t.me/onlineeducationkhaled"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Data Cell",
+      "url": "https://abdokhaledshaaban.github.io/data_cell/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://abdokhaledshaaban.github.io/data_cell/search/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
   <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="img/favicon-16.png" sizes="16x16" type="image/png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-
-  <!-- font awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Changa:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Changa:wght@300;400;500;600;700&display=swap">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <!-- main css -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="css/main.css">
-
-  <title>المدونة | Data Cell</title>
+  <link rel="stylesheet" href="css/pages/blog.css">
+  <title>Data Cell | المدونة</title>
 </head>
 
 <body>
-
-  <!-- start nav -->
-  <nav dir="ltr" class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <span>D</span>ata<span>C</span>ell
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__spinner"></div>
+    <span class="preloader__text">???? ???????</span>
+  </div>
+  <nav dir="ltr" class="navbar navbar-expand-lg fixed-top" aria-label="?????? ???????">
+    <div class="container"><a href="index.html" class="navbar-brand"><span>D</span>ata<span>C</span>ell
       </a>
-
       <div class="d-flex align-items-center ms-auto order-lg-2 gap-3">
-
-        <div class="login">
-          <a href="login.html" class="btn btn-primary login-btn">تسجيل دخول</a>
-        </div>
-
-        <!-- Theme Button -->
-        <button id="theme-switch" class="me-2">
-          <i class="fa-solid fa-moon"></i>
-          <i class="fa-regular fa-lightbulb"></i>
-        </button>
-
-        <!-- Navbar Toggler -->
-        <button class="navbar-toggler" type="button">
-          <i class="fa-solid fa-bars-staggered"></i>
-        </button>
+        <div class="login"><a href="login.html" class="btn btn-primary login-btn">تسجيل دخول</a></div><button
+          id="theme-switch" class="me-2" type="button" aria-label="????? ????? ??????"><i
+            class="fa-solid fa-moon"></i><i class="fa-regular fa-lightbulb"></i></button><button class="navbar-toggler"
+          type="button" aria-label="??? ???????" aria-controls="links" aria-expanded="false"><i
+            class="fa-solid fa-bars-staggered"></i></button>
       </div>
-
-
-      <!-- Links Menu -->
-      <div dir="rtl" class="navbar-collapse justify-content-lg-center order-lg-1" id="links">
-        <button class="nav-close">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-
+      <div dir="rtl" class="navbar-collapse justify-content-lg-center order-lg-1" id="links"><button class="nav-close"
+          type="button" aria-label="????? ???????"><i class="fa-solid fa-xmark"></i></button>
         <ul class="navbar-nav text-start text-lg-center gap-lg-2">
-
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">الرئيسية</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="courses.html" class="nav-link">جميع الكورسات</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">تواصل معنا</a>
-          </li>
-
+          <li class="nav-item"><a href="index.html" class="nav-link">الرئيسية</a></li>
+          <li class="nav-item"><a href="courses.html" class="nav-link">جميع الكورسات</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">تواصل معنا</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">من نحن</a></li>
-          <li class="nav-item drop-down">
-            <a href="javascript:void(0)" id="navbarDropdown" class="nav-link">المزيد <i
+          <li class="nav-item drop-down"><a href="javascript:void(0)" id="navbarDropdown" class="nav-link"
+              aria-haspopup="true" aria-expanded="false" aria-controls="nav-more-menu">المزيد <i
                 class="fa-solid fa-caret-down"></i></a>
-
-            <ul class="drop-down-list navbar-nav">
-              <li class="nav-item">
-                <a href="projects.html" class="nav-link">مشاريع</a>
-              </li>
-              <li class="nav-item">
-                <a href="quiz.html" class="nav-link">إختبارات</a>
-              </li>
-              <li class="nav-item">
-                <a href="learning_path.html" class="nav-link">مسار التعلم</a>
-              </li>
-              <li class="nav-item">
-                <a href="blog.html" class="nav-link">blog</a>
-              </li>
-              <li class="nav-item">
-                <a href="ai_chat.html" class="nav-link">AI chat</a>
-              </li>
-              <li class="nav-item">
-                <a href="#faq" class="nav-link">FAQ</a>
-              </li>
+            <ul class="drop-down-list navbar-nav" id="nav-more-menu" role="menu" aria-hidden="true">
+              <li class="nav-item"><a href="projects.html" class="nav-link">مشاريع</a></li>
+              <li class="nav-item"><a href="quiz.html" class="nav-link">إختبارات</a></li>
+              <li class="nav-item"><a href="learning_path.html" class="nav-link">مسار التعلم</a></li>
+              <li class="nav-item"><a href="blog.html" class="nav-link">blog</a></li>
+              <li class="nav-item"><a href="ai_chat.html" class="nav-link">AI chat</a></li>
+              <li class="nav-item"><a href="index.html#faq" class="nav-link">FAQ</a></li>
             </ul>
           </li>
         </ul>
-
-        <div class="login-mobile" style="display:none;">
-          <a href="login.html" class="btn btn-primary w-100">تسجيل دخول</a>
-        </div>
-
+        <div class="login-mobile" style="display:none;"><a href="login.html" class="btn btn-primary w-100">تسجيل
+            دخول</a></div>
       </div>
-
     </div>
-  </nav>
-
-  <button id="myBtn" aria-label="العودة لأعلى الصفحة"><i class="fa-solid fa-arrow-up"></i></button>
-
-  <!-- end nav -->
-
-  <!-- start blog hero -->
-  <section class="blog-hero">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-7">
-          <span class="hero-eyebrow badge rounded-pill">مدونة Data Cell</span>
-          <h1 class="hero-title display-5 fw-bold">أفكار عملية ومقالات قصيرة ترفع مستواك سريعًا</h1>
-          <p class="hero-text lead">
-            مقالات في Excel وPower BI وPower Query مع نصائح مباشرة تساعدك تتعلم وتطبق بدون تعقيد.
-          </p>
-          <div class="hero-actions d-flex flex-wrap gap-2">
-            <a href="#latest" class="btn btn-primary btn-lg">أحدث المقالات</a>
-            <a href="#topics" class="btn btn-outline-light btn-lg">تصفّح المواضيع</a>
+  </nav><button id="myBtn" aria-label="العودة لأعلى الصفحة"><i class="fa-solid fa-arrow-up"></i></button>
+  <main id="main">
+    <section class="blog-hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7"><span class="hero-eyebrow badge rounded-pill">مدونة Data Cell</span>
+            <h1 class="hero-title display-5 fw-bold">أفكار عملية ومقالات قصيرة ترفع مستواك سريعًا</h1>
+            <p class="hero-text lead">
+              مقالات في Excel وPower BI وPower Query مع نصائح مباشرة تساعدك تتعلم وتطبق بدون تعقيد.
+            </p>
+            <div class="hero-actions d-flex flex-wrap gap-2"><a href="#latest" class="btn btn-primary btn-lg">أحدث
+                المقالات</a><a href="#topics" class="btn btn-outline-light btn-lg">تصفّح المواضيع</a></div>
           </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="blog-hero-card card">
-            <span class="badge bg-primary">مقال مميز</span>
-            <h3 id="blogFeaturedTitle">جاري تحميل المقال...</h3>
-            <p id="blogFeaturedExcerpt"></p>
-            <div class="meta">
-              <span><i class="fa-solid fa-calendar"></i> <span id="blogFeaturedDate"></span></span>
+          <div class="col-lg-5">
+            <div class="blog-hero-card card"><span class="badge bg-primary">مقال مميز</span>
+              <h3 id="blogFeaturedTitle">جاري تحميل المقال...</h3>
+              <p id="blogFeaturedExcerpt"></p>
+              <div class="meta"><span><i class="fa-solid fa-calendar"></i><span id="blogFeaturedDate"></span></span>
+              </div><a href="#latest" class="btn btn-light w-100" id="blogFeaturedLink">اقرأ المقال</a>
             </div>
-            <a href="#latest" class="btn btn-light w-100" id="blogFeaturedLink">اقرأ المقال</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- end blog hero -->
-
-  <!-- start topics -->
-  <section class="blog-topics" id="topics">
-    <div class="container">
-      <div class="section-head text-center mb-4">
-        <h2>المواضيع الأكثر طلبًا</h2>
-        <p>اختار المجال اللي تحب تبدأ منه.</p>
-      </div>
-      <div class="row g-3 align-items-center justify-content-center">
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="#latest" class="topic-card d-flex flex-column align-items-center justify-content-center h-100">
-            <i class="fa-solid fa-file-excel"></i><span>Excel</span>
-          </a>
+    </section>
+    <section class="blog-topics" id="topics">
+      <div class="container">
+        <div class="section-head text-center mb-4">
+          <h2>المواضيع الأكثر طلبًا</h2>
+          <p>اختار المجال اللي تحب تبدأ منه.</p>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="#latest" class="topic-card d-flex flex-column align-items-center justify-content-center h-100">
-            <i class="fa-solid fa-chart-column"></i><span>Power BI</span>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="#latest" class="topic-card d-flex flex-column align-items-center justify-content-center h-100">
-            <i class="fa-solid fa-database"></i><span>Power Query</span>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="#latest" class="topic-card d-flex flex-column align-items-center justify-content-center h-100">
-            <i class="fa-solid fa-chart-line"></i><span>تحليل البيانات</span>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="#latest" class="topic-card d-flex flex-column align-items-center justify-content-center h-100">
-            <i class="fa-solid fa-screwdriver-wrench"></i><span>نصائح عملية</span>
-          </a>
+        <div class="row g-3 align-items-center justify-content-center">
+          <div class="col-6 col-md-4 col-lg-2"><a href="#latest"
+              class="topic-card d-flex flex-column align-items-center justify-content-center h-100"><i
+                class="fa-solid fa-file-excel"></i><span>Excel</span></a></div>
+          <div class="col-6 col-md-4 col-lg-2"><a href="#latest"
+              class="topic-card d-flex flex-column align-items-center justify-content-center h-100"><i
+                class="fa-solid fa-chart-column"></i><span>Power BI</span></a></div>
+          <div class="col-6 col-md-4 col-lg-2"><a href="#latest"
+              class="topic-card d-flex flex-column align-items-center justify-content-center h-100"><i
+                class="fa-solid fa-database"></i><span>Power Query</span></a></div>
+          <div class="col-6 col-md-4 col-lg-2"><a href="#latest"
+              class="topic-card d-flex flex-column align-items-center justify-content-center h-100"><i
+                class="fa-solid fa-chart-line"></i><span>تحليل البيانات</span></a></div>
+          <div class="col-6 col-md-4 col-lg-2"><a href="#latest"
+              class="topic-card d-flex flex-column align-items-center justify-content-center h-100"><i
+                class="fa-solid fa-screwdriver-wrench"></i><span>نصائح عملية</span></a></div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- end topics -->
-
-  <!-- start latest posts -->
-  <section class="blog-latest" id="latest">
-    <div class="container">
-      <div class="section-head text-center mb-4">
-        <h2>المقالات</h2>
-        <p>محتوى قصير ومفيد لمساعدتك تتعلم بسرعة.</p>
-      </div>
-
-      <div class="row g-4" id="blogPosts">
-        <div class="col-12 text-center text-secondary py-5" id="blogLoading">
-          جاري تحميل المقالات...
+    </section>
+    <section class="blog-latest" id="latest">
+      <div class="container">
+        <div class="section-head text-center mb-4">
+          <h2>المقالات</h2>
+          <p>محتوى قصير ومفيد لمساعدتك تتعلم بسرعة.</p>
+        </div>
+        <div class="row g-4" id="blogPosts">
+          <div class="col-12 text-center text-secondary py-5" id="blogLoading">
+            جاري تحميل المقالات...
+          </div>
+        </div>
+        <div class="blog-pagination-wrap" aria-label="تنقل صفحات المقالات">
+          <div class="blog-pagination"><a class="page-link pagination-side" href="#latest" id="blogPrev"
+              aria-label="السابق">السابق</a>
+            <ul class="pagination pagination-center mb-0" id="blogPagination"></ul><a class="page-link pagination-side"
+              href="#latest" id="blogNext" aria-label="التالي">التالي</a>
+          </div>
         </div>
       </div>
-
-      <div class="blog-pagination-wrap" aria-label="تنقل صفحات المقالات">
-        <div class="blog-pagination">
-          <a class="page-link pagination-side" href="#latest" id="blogPrev" aria-label="السابق">السابق</a>
-          <ul class="pagination pagination-center mb-0" id="blogPagination"></ul>
-          <a class="page-link pagination-side" href="#latest" id="blogNext" aria-label="التالي">التالي</a>
+    </section>
+    <section class="blog-newsletter">
+      <div class="container">
+        <div class="newsletter-box">
+          <div>
+            <h2>اشترك في النشرة البريدية</h2>
+            <p>مقال جديد ونصيحة عملية تصلك كل أسبوع.</p>
+          </div>
+          <form class="newsletter-form input-group"><label class="visually-hidden" for="newsletterEmail">البريد
+              الإلكتروني</label><input type="email" id="newsletterEmail" name="email"
+              placeholder="اكتب بريدك الإلكتروني" required autocomplete="email" class="form-control"><button
+              type="submit" class="btn btn-light">اشترك</button></form>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- end latest posts -->
-
-  <!-- start newsletter -->
-  <section class="blog-newsletter">
-    <div class="container">
-      <div class="newsletter-box">
-        <div>
-          <h2>اشترك في النشرة البريدية</h2>
-          <p>مقال جديد ونصيحة عملية تصلك كل أسبوع.</p>
-        </div>
-        <form class="newsletter-form input-group">
-          <label class="visually-hidden" for="newsletterEmail">البريد الإلكتروني</label>
-          <input type="email" id="newsletterEmail" name="email" placeholder="اكتب بريدك الإلكتروني" required
-            autocomplete="email" class="form-control">
-          <button type="submit" class="btn btn-light">اشترك</button>
-        </form>
-      </div>
-    </div>
-  </section>
-  <!-- end newsletter -->
-
-  <!-- start footer -->
-
+    </section>
+  </main>
   <footer class="footer">
-
     <div class="container">
-
       <div class="row gy-4">
-
-        <!-- Logo + description -->
-
         <div class="col-lg-4 col-md-6">
-
           <h3 class="footer-logo">Data Cell</h3>
-
           <p class="footer-text">
             تعلم إكسيل، باور بي آي، باور كويري وتحليل البيانات مع مشاريع حقيقية ودروس عملية. ابدأ رحلتك في تحليل
             البيانات اليوم!
           </p>
-
-          <div class="social-icons">
-
-            <a href="https://www.facebook.com/share/1FXn8WjE4s/" target="_blank"><i
-                class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.youtube.com/@khaledshaaban" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://chat.whatsapp.com/BG29xzeOdV8DOxjk9hb5Yo" target="_blank"><i
-                class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://t.me/onlineeducationkhaled" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-
-          </div>
-
+          <div class="social-icons"><a href="https://www.facebook.com/share/1FXn8WjE4s/" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a><a
+              href="https://www.youtube.com/@khaledshaaban" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a
+              href="https://chat.whatsapp.com/BG29xzeOdV8DOxjk9hb5Yo" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-whatsapp"></i></a><a href="https://t.me/onlineeducationkhaled" target="_blank"
+              rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a></div>
         </div>
-
-        <!-- Quick Links -->
-
         <div class="col-lg-2 col-md-6">
           <h5>اللينكات</h5>
           <ul class="footer-links">
@@ -295,7 +220,6 @@
             <li><a href="contact.html">اتصل بنا</a></li>
           </ul>
         </div>
-        <!-- Courses -->
         <div class="col-lg-3 col-md-6">
           <h5>الكورسات</h5>
           <ul class="footer-links">
@@ -306,7 +230,6 @@
             <li><a href="courses.html#pivot-table">Pivot table</a></li>
           </ul>
         </div>
-        <!-- Contact -->
         <div class="col-lg-3 col-md-6">
           <h5>تواصل معنا</h5>
           <ul class="footer-contact">
@@ -323,13 +246,10 @@
       </div>
     </div>
   </footer>
-
-  <!-- end footer -->
-
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- main js -->
-  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/pages/blog.js" defer></script>
 </body>
 
 </html>

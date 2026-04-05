@@ -1,0 +1,330 @@
+/* Projects Page */
+/* =========================
+  Projects Page
+========================= */
+
+.projects-hero {
+  background: var(--second-background);
+  margin-top: 74px;
+  padding: 110px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-hero::before,
+.projects-hero::after {
+  content: '';
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.18), transparent 70%);
+  z-index: 0;
+}
+
+.projects-hero::before {
+  top: -90px;
+  right: -70px;
+}
+
+.projects-hero::after {
+  bottom: -110px;
+  left: -80px;
+}
+
+.projects-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.projects-hero-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 26px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.projects-hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.projects-hero-header h3 {
+  margin: 0;
+  color: var(--text-main);
+  font-size: 22px;
+}
+
+.projects-hero-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: grid;
+  gap: 10px;
+  color: var(--text-second);
+}
+
+.projects-hero-list i {
+  color: var(--primary);
+  margin-left: 6px;
+}
+
+.projects-updated {
+  margin-top: 16px;
+  color: var(--text-second);
+  font-size: 13px;
+}
+
+.projects-library {
+  padding: 70px 0;
+  color: var(--text-main);
+}
+
+.projects-filter {
+  background: var(--base-variant);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.project-search {
+  position: relative;
+}
+
+.project-search input {
+  width: 100%;
+  padding: 12px 42px 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-body);
+  color: var(--text-main);
+}
+
+.project-search input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+}
+
+.project-search i {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-second);
+}
+
+.project-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-filter-btn {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-main);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-filter-btn.active,
+.project-filter-btn:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.project-download-note {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  color: var(--text-second);
+  font-size: 13px;
+}
+
+.project-download-note i {
+  color: var(--primary);
+}
+
+.project-file-card {
+  --project-accent: #2563eb;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-file-card::after {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: -60px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.18), transparent 70%);
+  z-index: 0;
+}
+
+.project-file-top {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.project-file-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--project-accent), #1e3a8a);
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.project-file-title h3 {
+  margin: 0;
+  color: var(--text-main);
+  font-size: 18px;
+}
+
+.project-file-title p {
+  margin: 6px 0 0;
+  color: var(--text-second);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.project-file-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--text-second);
+  font-size: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.project-file-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--base-variant);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.project-file-meta i {
+  color: var(--project-accent);
+}
+
+.project-file-card .project-tags {
+  position: relative;
+  z-index: 1;
+}
+
+.project-file-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.project-file-actions .btn {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.project-file-actions .btn-outline-primary {
+  border-color: var(--project-accent);
+  color: var(--project-accent);
+}
+
+.project-file-actions .btn-outline-primary:hover {
+  background: var(--project-accent);
+  color: #fff;
+}
+
+.projects-empty {
+  margin-top: 20px;
+  color: var(--text-second);
+  font-size: 15px;
+}
+
+.projects-guide {
+  background: var(--second-background);
+  border-radius: 24px;
+  margin: 0 10px;
+  padding: 70px 0;
+  color: var(--text-main);
+}
+
+.project-guide-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.project-guide-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: #fff;
+  font-size: 24px;
+}
+
+.project-guide-card h5 {
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.project-guide-card p {
+  color: var(--text-second);
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .projects-hero {
+    padding: 90px 0 60px;
+  }
+
+  .projects-hero-card {
+    padding: 22px;
+  }
+}
