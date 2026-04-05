@@ -3,10 +3,17 @@
   Login Page
 ========================= */
 
+.back-home {
+  position: fixed;
+  top: 20px;
+  right: 5px;
+  z-index: 1000;
+}
+
 .auth-hero {
   background: linear-gradient(120deg, #0f172a 0%, #1e3a8a 45%, #0ea5e9 100%);
   color: #fff;
-  padding: 110px 0 80px;
+  padding: 30px 0 40px;
   position: relative;
   overflow: hidden;
   min-height: 100vh;
