@@ -308,9 +308,7 @@
 }
 
 .method-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
+  margin: 0;
 }
 
 .method-card {
@@ -353,9 +351,7 @@
 }
 
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  margin: 0;
 }
 
 .team-card {
@@ -364,6 +360,7 @@
   border-radius: 18px;
   padding: 22px;
   text-align: center;
+  transition: 0.3s;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
@@ -414,13 +411,6 @@
 }
 
 @media (max-width: 992px) {
-  .method-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .team-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 576px) {
@@ -436,10 +426,5 @@
 
   .founder-card {
     padding: 22px;
-  }
-
-  .method-grid,
-  .team-grid {
-    grid-template-columns: 1fr;
   }
 }

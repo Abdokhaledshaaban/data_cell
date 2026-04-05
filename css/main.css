@@ -198,8 +198,8 @@ nav {
   #links .login-mobile {
     display: block;
     width: 90%;
-    position: absolute;
-    bottom: 0;
+    /* position: relative;
+    bottom: 0; */
     margin-bottom: 20px;
   }
 }
@@ -253,10 +253,12 @@ nav {
     gap: 15px;
     text-align: center !important;
     justify-content: center;
+    
   }
 
   .drop-down-list {
     position: static;
+    z-index: 100;
   }
   .navbar-toggler {
     display: flex;
@@ -830,8 +832,6 @@ div[id],
 
 .navbar-toggler,
 .nav-close {
-  display: flex;
-  align-items: center;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--bg-card);
@@ -839,6 +839,11 @@ div[id],
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
+}
+
+.navbar-toggler {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-toggler:hover,
@@ -1277,7 +1282,9 @@ textarea:focus {
   justify-content: center;
   background: var(--bg-body);
   z-index: 99999;
-  transition: opacity 0.45s ease, visibility 0.45s ease;
+  transition:
+    opacity 0.45s ease,
+    visibility 0.45s ease;
 }
 
 .preloader.is-hidden {
