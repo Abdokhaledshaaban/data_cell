@@ -830,6 +830,8 @@ div[id],
 
 .navbar-toggler,
 .nav-close {
+  display: flex;
+  align-items: center;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--bg-card);
