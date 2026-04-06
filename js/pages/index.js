@@ -1,4 +1,4 @@
-// Index Page
+﻿// Index Page
 // search
 
 const searchInput = document.getElementById('search-input');
@@ -69,7 +69,7 @@ if (homeLatestPosts) {
       ? `<span><i class="fa-solid fa-clock"></i> ${post.readTime}</span>`
       : '';
     const imageSrc = resolveImagePath(post.image);
-    const imageAlt = post.imageAlt || post.title || 'مقال من المدونة';
+    const imageAlt = post.imageAlt || post.title || 'ظ…ظ‚ط§ظ„ ظ…ظ† ط§ظ„ظ…ط¯ظˆظ†ط©';
     const link = post.url || 'blog.html';
     const isExternal = /^https?:\/\//i.test(link);
     const linkAttrs = isExternal
@@ -105,7 +105,7 @@ if (homeLatestPosts) {
     .then((data) => {
       const posts = Array.isArray(data) ? data : data.posts;
       if (!Array.isArray(posts) || posts.length === 0) {
-        renderMessage('لا توجد مقالات الآن.');
+        renderMessage('ظ„ط§ طھظˆط¬ط¯ ظ…ظ‚ط§ظ„ط§طھ ط§ظ„ط¢ظ†.');
         return;
       }
 
@@ -124,6 +124,67 @@ if (homeLatestPosts) {
       }
     })
     .catch(() => {
-      renderMessage('تعذّر تحميل المقالات الآن.');
+      renderMessage('طھط¹ط°ظ‘ط± طھط­ظ…ظٹظ„ ط§ظ„ظ…ظ‚ط§ظ„ط§طھ ط§ظ„ط¢ظ†.');
     });
+}
+// Hero motion + parallax (premium feel)
+const heroSection = document.querySelector('.hero-premium');
+const prefersReducedMotion =
+  window.matchMedia &&
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (heroSection && !prefersReducedMotion) {
+  if (window.gsap) {
+    const tl = window.gsap.timeline({
+      defaults: { duration: 0.7, ease: 'power2.out' },
+    });
+    tl.from('.hero-eyebrow', { y: 18, opacity: 0 })
+      .from('.hero-title', { y: 20, opacity: 0 }, '-=0.4')
+      .from('.hero-text', { y: 20, opacity: 0 }, '-=0.4')
+      .from('.hero-actions .btn', { y: 16, opacity: 0, stagger: 0.1 }, '-=0.35')
+      .from('.hero-highlights span', { y: 14, opacity: 0, stagger: 0.08 }, '-=0.35')
+      .from('.hero-media-frame', { y: 24, opacity: 0 }, '-=0.5')
+      .from('.hero-chip', { y: 16, opacity: 0, stagger: 0.12 }, '-=0.4');
+  }
+
+  const parallaxItems = heroSection.querySelectorAll('[data-parallax]');
+  const allowParallax =
+    window.matchMedia && window.matchMedia('(hover: hover)').matches;
+  if (parallaxItems.length && allowParallax) {
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+
+    const handleMove = (event) => {
+      const rect = heroSection.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      targetX = x;
+      targetY = y;
+    };
+
+    heroSection.addEventListener('mousemove', handleMove);
+    heroSection.addEventListener('mouseleave', () => {
+      targetX = 0;
+      targetY = 0;
+    });
+
+    const animate = () => {
+      currentX += (targetX - currentX) * 0.08;
+      currentY += (targetY - currentY) * 0.08;
+      const scrollOffset = window.scrollY * 0.02;
+
+      parallaxItems.forEach((el) => {
+        const depth = Number(el.dataset.parallax || 0.1);
+        const translateX = currentX * depth * 40;
+        const translateY = currentY * depth * 40 + scrollOffset * depth;
+        el.style.transform = `translate3d(${translateX}px, ${translateY}px, 0)`;
+      });
+
+      window.requestAnimationFrame(animate);
+    };
+
+    window.requestAnimationFrame(animate);
+  }
 }

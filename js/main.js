@@ -8,10 +8,19 @@ function enabledarkmode() {
 
 function disabledarkmode() {
   document.body.classList.remove('darkmode');
-  localStorage.setItem('darkmode', null);
+  localStorage.setItem('darkmode', 'inactive');
 }
 
-if (darkmode === 'active') enabledarkmode();
+if (!darkmode) {
+  darkmode = 'active';
+  localStorage.setItem('darkmode', 'active');
+}
+
+if (darkmode === 'active') {
+  enabledarkmode();
+} else {
+  disabledarkmode();
+}
 
 if (themeSwitch) {
   themeSwitch.setAttribute('aria-pressed', darkmode === 'active' ? 'true' : 'false');
@@ -137,14 +146,18 @@ const applyAosAttributes = () => {
     });
   };
 
-  setAos('.section-head, .hero-title, .hero-text', 'fade-up', 60);
   setAos(
-    '.course-card, .post-card, .feature-tile, .project-file-card, .topic-card, .team-card, .method-card, .contact-card, .quiz-topic-card, .quick-card',
+    '.section-head, .intro-section, .most-courses .text-center, .cta-content, .latest-section .section-head',
     'fade-up',
     60
   );
   setAos(
-    '.hero .hero-img, .about-hero-media img, .blog-hero-card, .projects-hero-card, .learning-hero-card',
+    '.course-card, .all-coursers, .post-card, .feature-tile, .most-course-card, .project-file-card, .topic-card, .team-card, .method-card, .contact-card, .quiz-topic-card, .quick-card',
+    'fade-up',
+    60
+  );
+  setAos(
+    '.about-hero-media img, .blog-hero-card, .projects-hero-card, .learning-hero-card',
     'zoom-in',
     80
   );
