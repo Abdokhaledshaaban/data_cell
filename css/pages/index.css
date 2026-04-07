@@ -542,6 +542,7 @@
 
 .most-course-btn:hover {
   background: var(--primary-hover);
+  color: white;
 }
 
 @media (max-width: 992px) {
