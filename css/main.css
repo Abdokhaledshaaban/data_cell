@@ -472,6 +472,7 @@ nav {
 
 .course-btn:hover {
   background: var(--primary-hover);
+  color: white;
 }
 
 /* shared post cards */
@@ -555,6 +556,7 @@ nav {
 
 .post-btn:hover {
   background: var(--primary-hover);
+  color: white;
 }
 
 /* cta section */
