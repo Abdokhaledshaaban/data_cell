@@ -1491,8 +1491,8 @@ button,
   box-shadow: var(--shadow-md);
 }
 
-.btn:active,
-button:active {
+.btn:active:not(.accordion-button),
+button:active:not(.accordion-button) {
   transform: scale(0.98);
 }
 
