@@ -74,6 +74,13 @@
   margin-left: 6px;
 }
 
+.path-stat {
+  border: 1px solid var(--border);
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+}
 .projects-updated {
   margin-top: 16px;
   color: var(--text-second);

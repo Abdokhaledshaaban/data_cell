@@ -98,13 +98,6 @@
   margin-top: 26px;
 }
 
-.quiz-topics {
-  position: sticky;
-  top: 100px;
-  padding: 60px 0 20px;
-  color: var(--text-main);
-}
-
 .quiz-topics .section-head p {
   color: var(--text-second);
   margin: 0;
@@ -120,14 +113,13 @@
 
 .quiz-topic-bar {
   position: fixed;
-  top: 74px;
-  /* right: 30%; */
+  top: 82px;
   width: 100%;
   z-index: 960;
   background: var(--overlay);
   padding: 20px 0;
   border-radius: 0 0 9px 9px;
-  /* backdrop-filter: blur(10px); */
+  backdrop-filter: blur(10px);
 }
 
 .quiz-topic-bar-inner {

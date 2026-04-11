@@ -1,3 +1,10 @@
+// ============================================
+// GLOBAL ANIMATIONS & FUNCTIONALITY
+// ============================================
+
+// ============================================
+// DARK MODE MANAGEMENT
+// ============================================
 let darkmode = localStorage.getItem('darkmode');
 const themeSwitch = document.getElementById('theme-switch');
 
@@ -23,7 +30,10 @@ if (darkmode === 'active') {
 }
 
 if (themeSwitch) {
-  themeSwitch.setAttribute('aria-pressed', darkmode === 'active' ? 'true' : 'false');
+  themeSwitch.setAttribute(
+    'aria-pressed',
+    darkmode === 'active' ? 'true' : 'false'
+  );
   themeSwitch.addEventListener('click', () => {
     darkmode = localStorage.getItem('darkmode');
     if (darkmode !== 'active') {
@@ -36,11 +46,15 @@ if (themeSwitch) {
   });
 }
 
+// ============================================
+// NAVBAR MANAGEMENT & SCROLL EFFECTS
+// ============================================
 const navbarToggler = document.querySelector('.navbar-toggler');
 const linksMenu = document.getElementById('links');
 const nav_close = document.querySelector('.nav-close');
 const drop_down_btn = document.querySelector('.drop-down');
 const drop_down_list = document.querySelector('.drop-down-list');
+const navbar = document.querySelector('.navbar');
 
 const setMenuState = (isOpen) => {
   if (!linksMenu || !navbarToggler) return;
@@ -65,7 +79,6 @@ if (linksMenu) {
   linksMenu.querySelectorAll('.nav-link').forEach((link) => {
     link.addEventListener('click', () => {
       if (link.closest('.drop-down')) return;
-
       setMenuState(false);
     });
   });
@@ -93,109 +106,73 @@ if (drop_down_btn && drop_down_list) {
   });
 
   document.addEventListener('click', (e) => {
-    if (!drop_down_list.contains(e.target) && !drop_down_btn.contains(e.target)) {
+    if (
+      !drop_down_list.contains(e.target) &&
+      !drop_down_btn.contains(e.target)
+    ) {
       setDropdownState(false);
     }
   });
 }
 
-function moveLoginButton() {
-  const loginBtn = document.querySelector('.login-btn');
-  const linksMenu = document.getElementById('links');
-  const loginMobile = document.querySelector('.login-mobile a');
-
-  if (!loginBtn || !linksMenu || !loginMobile) return;
-
-  if (window.innerWidth <= 991) {
-    // Move button to sidebar
-    loginMobile.textContent = loginBtn.textContent;
-    loginMobile.parentElement.style.display = 'block';
-    loginBtn.style.display = 'none';
-  } else {
-    // Move button back to navbar
-    loginBtn.style.display = 'flex';
-    loginMobile.parentElement.style.display = 'none';
-  }
-}
-
-// Initial check
-moveLoginButton();
-
-// Update on resize
-window.addEventListener('resize', moveLoginButton);
-
-// preloader + page ready
-window.addEventListener('load', () => {
-  const preloader = document.querySelector('.preloader');
-  if (preloader) {
-    preloader.classList.add('is-hidden');
-    window.setTimeout(() => preloader.remove(), 600);
-  }
-  document.body.classList.add('page-loaded');
-});
-
-// AOS (Animate On Scroll)
-const applyAosAttributes = () => {
-  const setAos = (selector, animation, stagger = 80) => {
-    document.querySelectorAll(selector).forEach((el, index) => {
-      if (!el.dataset.aos) {
-        el.dataset.aos = animation;
-        el.dataset.aosDelay = String((index % 4) * stagger);
-        el.dataset.aosDuration = '700';
-      }
-    });
-  };
-
-  setAos(
-    '.section-head, .intro-section, .most-courses .text-center, .cta-content, .latest-section .section-head',
-    'fade-up',
-    60
-  );
-  setAos(
-    '.course-card, .all-coursers, .post-card, .feature-tile, .most-course-card, .project-file-card, .topic-card, .team-card, .method-card, .contact-card, .quiz-topic-card, .quick-card',
-    'fade-up',
-    60
-  );
-  setAos(
-    '.about-hero-media img, .blog-hero-card, .projects-hero-card, .learning-hero-card',
-    'zoom-in',
-    80
-  );
-};
-
-document.addEventListener('DOMContentLoaded', () => {
-  window.applyAosAttributes = applyAosAttributes;
-  applyAosAttributes();
-  if (window.AOS) {
-    window.AOS.init({
-      duration: 700,
-      easing: 'ease-out-cubic',
-      once: true,
-      offset: 80,
-    });
-  }
-});
-
-// scroll to top
-
-const topBtn = document.getElementById('myBtn');
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
+// Navbar scroll effect
+if (navbar) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
   });
 }
 
-if (topBtn) {
-  const toggleTopBtn = () => {
-    topBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
-  };
+// ============================================
+// BACK TO TOP BUTTON WITH SMOOTH ANIMATION
+// ============================================
+const backToTopBtn = document.getElementById('myBtn');
 
-  window.addEventListener('scroll', toggleTopBtn);
-  topBtn.addEventListener('click', scrollToTop);
-  toggleTopBtn();
-}
+// ============================================
+// GLOBAL SMOOTH SCROLL FALLBACK
+// ============================================
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href === '#') return;
+
+    // Skip if handled by page-specific script (index.js)
+    if (document.body.classList.contains('premium-home')) {
+      return;
+    }
+
+    e.preventDefault();
+    const target = document.querySelector(href);
+  });
+});
+
+// ============================================
+// ENHANCED ACCESSIBILITY
+// ============================================
+const prefersReducedMotion = window.matchMedia(
+  '(prefers-reduced-motion: reduce)'
+).matches;
+
+// ============================================
+// SCROLL REVEAL ANIMATIONS
+// ============================================
+const scrollRevealElements = document.querySelectorAll(
+  '.course-card, .post-card, .feature-tile, .journey-step, .most-course-card'
+);
+
+// ============================================
+// MOUSE POSITION TRACKING FOR PARALLAX
+// ============================================
+let mouseX = 0;
+let mouseY = 0;
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
 
 // FAQ loader
 
@@ -303,4 +280,3 @@ faqAccordions.forEach((accordion, accordionIndex) => {
       }
     });
 });
-
