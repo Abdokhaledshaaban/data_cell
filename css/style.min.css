@@ -241,6 +241,12 @@ body.premium-home .hero-premium {
     ),
     radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.2), transparent 40%);
 }
+
+@media (max-width: 768px) {
+  body.premium-home .hero-premium {
+    margin-top: 80px;
+  }
+}
 body.premium-home .hero-premium::before {
   content: '';
   position: absolute;
@@ -1347,7 +1353,7 @@ body.premium-home .hero-actions .btn-primary {
     margin-inline: 0.2rem;
   }
 }
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   body.premium-home *,
   body.premium-home *::before,
   body.premium-home *::after {
@@ -1357,7 +1363,7 @@ body.premium-home .hero-actions .btn-primary {
   body.premium-home .hero-scroll-cue {
     display: none;
   }
-}
+} */
 
 /* faq */
 

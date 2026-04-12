@@ -131,6 +131,25 @@ if (navbar) {
 // ============================================
 const backToTopBtn = document.getElementById('myBtn');
 
+if (backToTopBtn) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.opacity = '1';
+      backToTopBtn.style.pointerEvents = 'auto';
+    } else {
+      backToTopBtn.style.opacity = '0';
+      backToTopBtn.style.pointerEvents = 'none';
+    }
+  });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+}
+
 // ============================================
 // GLOBAL SMOOTH SCROLL FALLBACK
 // ============================================
@@ -280,3 +299,5 @@ faqAccordions.forEach((accordion, accordionIndex) => {
       }
     });
 });
+
+// scroll to top
