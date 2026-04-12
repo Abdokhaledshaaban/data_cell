@@ -1336,10 +1336,6 @@ html {
   transition: transform 0.3s var(--ease-out);
 }
 
-.navbar-brand:hover {
-  transform: translateY(-2px);
-}
-
 .nav-item a {
   font-weight: 600;
   padding: 10px 16px;
